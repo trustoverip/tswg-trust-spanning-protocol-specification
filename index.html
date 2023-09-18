@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        <link rel="canonical" href="https://github.com/m00sey/tswg-test-spec/">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>TSWG Test Spec</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">TSWG Test Spec</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#scope" class="nav-link">Scope</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#normative-references" class="nav-link">Normative references</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#terms-and-definitions" class="nav-link">Terms and Definitions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#actual-document-content-seccontent" class="nav-link">Actual document content {#sec:content}</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#another-clause" class="nav-link">Another clause</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#with-a-subclause" class="nav-link">With a subclause</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#and-another-subclause" class="nav-link">And another subclause</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#actual-document-content-seccontent_1" class="nav-link">Actual document content {#sec:content}</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#another-clause_1" class="nav-link">Another clause</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#with-a-subclause_1" class="nav-link">With a subclause</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#and-another-subclause_1" class="nav-link">And another subclause</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#this-is-an-annex-secannexa-normative" class="nav-link">This is an annex {#sec:annexA .normative}</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#this-is-another-annex-secannexb-informative" class="nav-link">This is another annex {#sec:annexB .informative}</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>\maketitle</p>
+<p>\newpage</p>
+<p>\toc</p>
+<p>\newpage
+::: forewordtitle
+Foreword
+:::</p>
+<p>The foreword goes here.</p>
+<p>\newpage
+::: introtitle
+Introduction
+:::</p>
+<p>Fancy introduction!
+\mainmatter</p>
+<p>\doctitle</p>
+<h1 id="scope">Scope</h1>
+<p>Describe the scope</p>
+<h1 id="normative-references">Normative references</h1>
+<p>The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+<p>::: { #nrm:pdf2 .normref label="ISO 32000-2" }
+ISO 32000-2, <em>Document management --- Portable Document Format --- Part 2: PDF 2.0</em>
+:::</p>
+<p>::: { #nrm:cms .normref label="RFC 5652" }
+HOUSLEY, R. <em>RFC 5652: Cryptographic Message Syntax (CMS).</em> [online]. 2009. Available from: <a href="https://tools.ietf.org/html/rfc5652.html">https://tools.ietf.org/html/rfc5652.html</a>
+:::</p>
+<h1 id="terms-and-definitions">Terms and Definitions</h1>
+<p>For the purposes of this document, the following terms and definitions apply.</p>
+<p>ISO and IEC maintain terminological databases for use in standardization at the following addresses:</p>
+<ul>
+<li>ISO Online browsing platform: available at <a href="https://www.iso.org/obp">https://www.iso.org/obp</a></li>
+<li>IEC Electropedia: available at <a href="http://www.electropedia.org/">http://www.electropedia.org/</a></li>
+</ul>
+<p>PDF (Portable Document Format)</p>
+<p>: file format defined by ISO 32000-2</p>
+<p>MAC (Message Authentication Code)</p>
+<p>: fixed-length string of bits used to verify the authenticity of a message, generated by the sender of the message, transmitted together with the message, and verified by the receiver of the message</p>
+<p>: [SOURCE: [@iso-16609], 3.15]</p>
+<h1 id="actual-document-content-seccontent">Actual document content {#sec:content}</h1>
+<p>I can cite documents from the normative references: [@nrm:pdf2, 7.3]. Or from the bibliography: [@cms-update, § 1.1].</p>
+<p>: My fancy table {#tbl:fancy-table}</p>
+<p>+-------------------------+-------------+-------------------------------------------+
+| <strong>Key</strong>                 | <strong>Type</strong>    | <strong>Value</strong>                                 |
++=========================+=============+===========================================+
+| <strong>Type</strong>                | name        | <em>DeveloperExtensions</em>                     |
++-------------------------+-------------+-------------------------------------------+
+| <strong>BaseVersion</strong>         | name        | <em>2.0</em>                                     |
++-------------------------+-------------+-------------------------------------------+
+| <strong>ExtensionLevel</strong>      | integer     | 99999                                     |
++-------------------------+-------------+-------------------------------------------+
+| <strong>ExtensionRevision</strong>   | text string | :2022                                     |
+|                         |             |                                           |
+|                         |             | ::: note                                  |
+|                         |             | The COLON (U+003A) character is part      |
+|                         |             | of the revision identifier.               |
+|                         |             | :::                                       |
++-------------------------+-------------+-------------------------------------------+
+| <strong>URL</strong>                 | string      | <a href="https://example.com">https://example.com</a>                     |
++-------------------------+-------------+-------------------------------------------+</p>
+<p>I can also refer to @tbl:fancy-table.</p>
+<h1 id="another-clause">Another clause</h1>
+<h2 id="with-a-subclause">With a subclause</h2>
+<p>Let's cite @sec:content.</p>
+<p>::: note
+This is a note.
+:::</p>
+<p>::: note
+This is another note. Check out the numbering.
+:::</p>
+<p>::: example
+How about an example?
+:::</p>
+<h2 id="and-another-subclause">And another subclause</h2>
+<p>::: note
+This is also a note, but it's not numbered.
+:::</p>
+<p>\backmatter</p>
+<h1 id="actual-document-content-seccontent_1">Actual document content {#sec:content}</h1>
+<p>I can cite documents from the normative references: [@nrm:pdf2, 7.3]. Or from the bibliography: [@cms-update, § 1.1].</p>
+<p>: My fancy table {#tbl:fancy-table}</p>
+<p>+-------------------------+-------------+-------------------------------------------+
+| <strong>Key</strong>                 | <strong>Type</strong>    | <strong>Value</strong>                                 |
++=========================+=============+===========================================+
+| <strong>Type</strong>                | name        | <em>DeveloperExtensions</em>                     |
++-------------------------+-------------+-------------------------------------------+
+| <strong>BaseVersion</strong>         | name        | <em>2.0</em>                                     |
++-------------------------+-------------+-------------------------------------------+
+| <strong>ExtensionLevel</strong>      | integer     | 99999                                     |
++-------------------------+-------------+-------------------------------------------+
+| <strong>ExtensionRevision</strong>   | text string | :2022                                     |
+|                         |             |                                           |
+|                         |             | ::: note                                  |
+|                         |             | The COLON (U+003A) character is part      |
+|                         |             | of the revision identifier.               |
+|                         |             | :::                                       |
++-------------------------+-------------+-------------------------------------------+
+| <strong>URL</strong>                 | string      | <a href="https://example.com">https://example.com</a>                     |
++-------------------------+-------------+-------------------------------------------+</p>
+<p>I can also refer to @tbl:fancy-table.</p>
+<h1 id="another-clause_1">Another clause</h1>
+<h2 id="with-a-subclause_1">With a subclause</h2>
+<p>Let's cite @sec:content.</p>
+<p>::: note
+This is a note.
+:::</p>
+<p>::: note
+This is another note. Check out the numbering.
+:::</p>
+<p>::: example
+How about an example?
+:::</p>
+<h2 id="and-another-subclause_1">And another subclause</h2>
+<p>::: note
+This is also a note, but it's not numbered.
+:::</p>
+<p>\backmatter</p>
+<h1 id="this-is-an-annex-secannexa-normative">This is an annex {#sec:annexA .normative}</h1>
+<p>With some text</p>
+<h1 id="this-is-another-annex-secannexb-informative">This is another annex {#sec:annexB .informative}</h1>
+<p>With some more text
+\newpage</p>
+<p>\makebibliography</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.5.2
+Build Date UTC : 2023-09-18 11:39:08.927015+00:00
+-->
